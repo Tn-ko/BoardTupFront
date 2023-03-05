@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>signIn</title>
+    <link rel="stylesheet" href="styles/styleForSignIn.css" type="text/css"/>
+</head>
+<body>
+<span>    
+<header class="header">
+    <span id="header_quiz"><a class="navbar-brand"><h2 style="color:aliceblue">Вперые здесь?</h1></a></span>   
+    
+    <a href="SignUp.html" class="SignUp" (click)="(null!, 'add')">Зарегистрироваться <!--use a non-null assertion.--></a>
+     
+     <span class="sr-only">(current)</span>
+ 
+  </header>          
+ <div class="container" id="main-container">
+ 
+    <section class="vh-100">
+       <div class="container py-5 h-100">
+         <div class="row d-flex align-items-center justify-content-center h-100">
+           <div class="col-md-8 col-lg-7 col-xl-6">
+             <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/draw2.svg"
+               class="img-fluid" alt="Phone image">
+           </div>
+           <div class="col-md-7 col-lg-5 col-xl-5 offset-xl-1">
+            
+                <h2>Или зарегистрированы?</h2>
+                <div class="panel panel-primary">
+              
+               </div>
+               <!-- Email input -->
+               <div class="form-outline mb-4">
+                 <input type="email" id="form1Example13" class="form-control form-control-lg" />
+                 <label class="form-label" for="form1Example13">Эл. почта</label>
+               </div>
+     
+               <!-- Password input -->
+               <div class="form-outline mb-4">
+                 <input type="password" id="form1Example23" class="form-control form-control-lg" />
+                 <label class="form-label" for="form1Example23">Пароль</label>
+               </div>
+     
+               <div class="d-flex justify-content-around align-items-center mb-4">
+                 <!-- Checkbox -->
+                 <div class="form-check">
+                   <input class="form-check-input" type="checkbox" value="" id="form1Example3" checked />
+                   <label class="form-check-label" for="form1Example3"> Запомнить меня </label>
+                 </div>
+               
+               </div>
+     
+               <!-- Submit button -->
+               <a href="main.html"><button class="btn btn-primary btn-lg btn-block">Войти</button></a>
+     
+               
+        
+           </div>
+         </div>
+       </div>
+     </section>
+ </body>
+</html>          

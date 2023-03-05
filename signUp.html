@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SignUp</title>
+    <link rel="stylesheet" href="styles/styleForSignUp.css" type="text/css" />
+  </head>
+  <body>
+    <div class="main">
+      <div style="padding-left: 20px; padding-right: 20px">
+        <label style="padding-left: 30%; margin-top: 5%" class="h1"
+          >Создайте профиль</label
+        >
+        <div style="display: grid; grid-template-columns: 50% 40%">
+          <label for="name">Имя</label>
+          <label style="display: block; margin-left: 13px" for="name"
+            >Фамилия</label
+          >
+        </div>
+        <div style="display: grid; grid-template-columns: 47% 47%">
+          <input
+            class="form-control form-control-lg"
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Имя"
+            required
+          />
+          <input
+            class="form-control form-control-lg"
+            style="margin-left: 26px"
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Фамилия"
+            required
+          />
+        </div>
+        <br />
+        <div>
+          <label for="password">Дата рождения</label>
+          <div
+            style="
+              display: grid;
+              grid-template-columns: 27% 2fr 35%;
+              width: 100%;
+            "
+          >
+            <select class="form-control form-control-lg">
+              <option
+                class="form-control form-control-lg"
+                style="display: flex"
+                value="option2"
+              >
+                День
+              </option>
+              <option value="option2">1</option>
+              <option value="option2">2</option>
+              <option value="option2">3</option>
+              <option value="option2">4</option>
+              <option value="option2">5</option>
+              <option value="option2">6</option>
+              <option value="option2">7</option>
+              <option value="option2">8</option>
+              <option value="option2">9</option>
+              <option value="option2">10</option>
+              <option value="option2">11</option>
+              <option value="option2">12</option>
+              <option value="option2">13</option>
+              <option value="option2">14</option>
+              <option value="option2">15</option>
+              <option value="option2">16</option>
+              <option value="option2">17</option>
+              <option value="option2">18</option>
+              <option value="option2">19</option>
+              <option value="option2">20</option>
+              <option value="option2">21</option>
+              <option value="option2">22</option>
+              <option value="option2">23</option>
+              <option value="option2">24</option>
+              <option value="option2">25</option>
+              <option value="option2">26</option>
+              <option value="option2">27</option>
+              <option value="option2">28</option>
+              <option value="option2">29</option>
+              <option value="option2">30</option>
+              <option value="option2">31</option>
+            </select>
+
+            <select class="form-control form-control-lg">
+              <option value="option2">Месяц</option>
+              <option value="option2">Январь</option>
+              <option value="option2">Февраль</option>
+              <option value="option2">Март</option>
+              <option value="option2">Апрель</option>
+              <option value="option2">Май</option>
+              <option value="option2">Июнь</option>
+              <option value="option2">Июль</option>
+              <option value="option2">Август</option>
+              <option value="option2">Сентябрь</option>
+              <option value="option2">Октябрь</option>
+              <option value="option2">Ноябрь</option>
+              <option value="option2">Декабрь</option>
+            </select>
+            <select class="form-control form-control-lg">
+              <option value="option2">Год</option>
+              <option value="option2">2017</option>
+              <option value="option2">2018</option>
+              <option value="option2">2019</option>
+              <option value="option2">2020</option>
+              <option value="option2">2021</option>
+              <option value="option2">2022</option>
+              <option value="option2">2023</option>
+            </select>
+          </div>
+          <div class="wraper_gender">
+            <label for="email">Пол </label>
+            <div class="wraper_gender2">
+              <div class="form-check form-check-inline mb-0 me-4">
+                <input
+                  class="form-control form-control-lg"
+                  type="radio"
+                  name="gender"
+                  class="form-control"
+                  id="gender"
+                  placeholder="Gender"
+                  required
+                  value="Female"
+                />
+                <label class="form-check-label" for="femaleGender"
+                  >Мужской</label
+                >
+              </div>
+
+              <div class="form-check form-check-inline mb-0 me-4">
+                <input
+                  class="form-control form-control-lg"
+                  type="radio"
+                  name="gender"
+                  class="form-control"
+                  id="gender"
+                  placeholder="Gender"
+                  required
+                  value="Male"
+                />
+                <label class="form-check-label" for="maleGender">Женский</label>
+              </div>
+            </div>
+          </div>
+
+          <label for="email">Имя ящика</label>
+
+          <div
+            style="display: grid; grid-template-columns: 2fr 40%; width: 100%"
+          >
+            <input
+              class="form-control form-control-lg"
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Имя ящика"
+              pattern="^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+              required
+            />
+            <select class="form-control form-control-lg">
+              <option value="option1" selected>@gmail.com</option>
+              <option value="option2">@yandex.ru</option>
+              <option value="option2">@mail.com</option>
+              <option value="option2">@someth.ru</option>
+            </select>
+          </div>
+
+          <div>
+            <label for="password">Пароль</label>
+            <br />
+            <input
+              class="form-control form-control-lg"
+              style="width: 100%"
+              #password="ngModel"
+              type="password"
+              name="password"
+              id="password"
+              placeholder="Пароль"
+              maxlength="32"
+              pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[$@$!%?&])[A-Za-z\d$@$!%?&]{8,}$"
+              required
+            />
+          </div>
+          <label for="password"> Номер телефона</label>
+          <br />
+          <div
+            style="display: grid; grid-template-columns: 3fr 8fr; width: 100%"
+          >
+            <select class="form-control form-control-lg">
+              <option selected value="option1">+7</option>
+              <option value="option5">+6</option>
+              <option value="option2">+5</option>
+              <option value="option3">+4</option>
+              <option value="option4">+3</option>
+              <option value="option5">+2</option>
+              <option value="option5">+1</option>
+            </select>
+            <input
+              class="form-control form-control-lg"
+              type="tel"
+              pattern="[0-9]*"
+              placeholder="(900)000-00-00"
+              maxlength="11"
+              minlength="11"
+            />
+          </div>
+
+          <div>
+            <a href="main.html"
+              ><button
+                type="submit"
+                class="btn btn-primary"
+                style="
+                  margin-bottom: 5%;
+                  display: block-inline;
+                  width: 80%;
+                  margin-left: 40px;
+                "
+              >
+                Создать
+              </button></a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
